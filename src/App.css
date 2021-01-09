@@ -1,20 +1,12 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
 .App-header {
-  background-color: #282c34;
+  background: rgb(121, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(121, 0, 0, 0.5438550420168067) 0%,
+    rgba(212, 3, 21, 0.3981967787114846) 50%,
+    rgba(171, 4, 4, 0.36458333333333337) 100%
+  );
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,16 +15,44 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.superM {
+  display: flex;
+  align-items: center;
+  color: red;
+}
+.superM h3 {
+  color: white;
+  font-family: 'Potta One', cursive;
+  -webkit-text-stroke: 0.5px black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px 20px;
+  justify-items: center;
+  align-items: center;
+}
+.card {
+  position: relative;
+  /* overflow: hidden; */
+}
+.title {
+  z-index: 3;
+  position: absolute;
+  background-color: #282c3469;
+  width: 200px;
+  height: 50px;
+  bottom: 5px;
+  right: 0;
+}
+.card span p {
+  text-align: center;
+  padding: 0;
+  margin-top: 10px;
+}
+.heart-icon {
+  position: absolute;
+  top: 5px;
+  left: 5px;
 }
